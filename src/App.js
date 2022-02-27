@@ -1,14 +1,21 @@
-import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
+import React from 'react';
+import Home from './components/StudentClassroom/Home';
+import Header from './components/Classroom/Header';
+import Classroom from './components/Classroom/Classroom';
+import { Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
     <Header />
-    <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Classroom" component={Classroom} />
+      </Switch> 
     </>
   );
 }
+
 
 export default App;

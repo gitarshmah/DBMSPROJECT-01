@@ -1,14 +1,14 @@
-import '../App.css';
 import Cards from './Cards';
+import classes from './StudentClassroom.module.css'
 
 const Home = () => {
 
     return (
       <div>
-      <div className="main-name">
+      <div className={classes["main-name"]}>
       <p>Hello, Saquib!</p>
       </div>
-        <div className="home">
+        <div className={classes["home"]}>
         <Cards color="#3E497A" tchrName="Sheldon" subject="DBMS"/>
         <Cards color="#B8405E" tchrName="Leonard" subject="OS Lab"/>
         <Cards color="#219F94" tchrName="Penny" subject="DSA"/>
