@@ -8,7 +8,7 @@ const Home = () => {
       <div className={classes["main-name"]}>
       <p>Hello, Saquib!</p>
       </div>
-        <div className={classes["home"]}>
+        <div className={classes["home"]} >
         <Cards color="#3E497A" tchrName="Sheldon" subject="DBMS"/>
         <Cards color="#B8405E" tchrName="Leonard" subject="OS Lab"/>
         <Cards color="#219F94" tchrName="Penny" subject="DSA"/>
